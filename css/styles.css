@@ -1,0 +1,208 @@
+/* Палітра кольорів */
+:root {
+    --accent-color: #2196F3;
+    --main-color: #757575;
+    --title-color: #212121;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --dark-bg-color: #2F303A;
+    --light-bg-color: #F5F4FA;
+    --unactive-filter-color: #F5F4FA;
+    --container-bg-color: #EEEEEE;
+}
+
+/* Загальні стилі */
+body {
+    color: var(--main-color);
+    background-color: var(--white-color);
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+    letter-spacing: 0.03em;
+}
+.hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+.title {
+    color: var(--title-color);
+}
+.logo {
+    color: var(--accent-color);
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.logo-head-accent {
+    color: var(--black-color);
+}
+.logo-foot-accent {
+    color: var(--white-color);
+}
+.button {
+    font-family: 'Roboto', sans-serif;
+
+    cursor: pointer;
+}
+
+/* Хеддер */
+.menu .link {
+    color: var(--title-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.menu .link:hover,
+.menu .link:focus,
+.menu .link.current,
+.head-contacts .link:hover,
+.head-contacts .link:focus {
+    color: var(--accent-color)
+}
+.head-contacts .link {
+    color: var(--main-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em
+}
+
+/* Герой */
+.hero {
+    background-color: var(--dark-bg-color);
+}
+.hero .title{
+    color: var(--white-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero .button {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border-style: none;
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    display: flex;
+    align-items: center;
+}
+.hero .button:hover,
+.hero .button:focus {
+    background-color: #188CE8;
+}
+
+/* Переваги */
+.benefits .title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.benefits .text {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* Чим ми займаємося */
+.services .title{
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+/* Наша команда */
+.team {
+    background-color: var(--light-bg-color);
+}
+.card {
+    background-color: var(--white-color);
+}
+.team .main {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+.team .name {
+    font-weight: 500;
+}
+.team .text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+/* Футер */
+.page-footer {
+    background-color: var(--dark-bg-color);
+}
+.foot-contacts .link{
+    color: #ffffff99;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+}
+.foot-contacts .link:hover,
+.foot-contacts .link:focus {
+    color: var(--white-color);
+}
+
+/* Портфоліо */
+/* Список філтрів */
+.filters-menu .button {
+    background-color: var(--light-bg-color);
+    border-style: none;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+.filters-menu .button:hover,
+.filters-menu .button:focus,
+.filters-menu .button.current {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+/* Список прикладів */
+.examples .card {
+    border: 1px solid var(--container-bg-color);
+}
+.examples .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.examples .text {
+    font-size: 16px;
+    line-height: 1.88;
+}
