@@ -38,14 +38,10 @@ body {
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-    /* ВРЕМЕННО */
-    /* outline: 2px solid green; */
 }
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    /* ВРЕМЕННО */
-    /* outline: 2px solid tomato; */
 }
 .link {
     text-decoration: none;
@@ -243,14 +239,11 @@ body {
 .team-list {
     display: flex;
 }
-.team-list .card:not(:last-child) {
+.team-list .item:not(:last-child) {
     margin-right: 30px;
 }
 
-.team .image {
-    margin-bottom: 30px;
-}
-.team .card {
+.team-list .item {
     width: 270px;
 
     background-color: var(--white-color);
@@ -265,7 +258,7 @@ body {
     line-height: 1.16;
     text-align: center;
 }
-.team .name {
+.team-list .name {
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -273,16 +266,18 @@ body {
     line-height: 1.19;
     text-align: center;
 }
-.team .text {
-    padding-bottom: 30px;
-
+.team-list .text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
 }
+.team-list .content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 /* Футер */
-.page-footer .container {
+.page-footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -318,8 +313,7 @@ body {
 .filters-menu {
     display: flex;
     justify-content: center;
-    padding-bottom: 16px;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 .filters-menu .item {
     display: block;
@@ -357,7 +351,6 @@ body {
     width: calc((100% - 2 * 30px) / 3);
 }
 .border {
-    display: block;
     border: 1px solid var(--container-bg-color);
     border-top-width: 0px;
     padding-top: 20px;
